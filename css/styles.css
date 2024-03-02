@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.font-google, .title{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+:root{
+    --primary-color: hsl(214, 84%, 50%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 100%);
+    --bgcolor-section: hsl(210, 18%, 88%);
+    --nav-color: hsl(0, 0%, 20%);
+    --border-radius: .4rem;
+    --font-icon: fantasy;
+    --transition: opacity .2s ease;
+
+    --image-header-background: url("https://c4.wallpaperflare.com/wallpaper/827/65/320/firewatch-4k-best-wallpaper-preview.jpg");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    font-family: monospace;
+}
+
+.header{
+    background-color: var(--nav-color);
+    width: 100%;
+    position: fixed;
+    z-index: 600;
+    transition: background-color 500ms linear;
+}
+.navbar{
+    padding: .9rem;
+    margin: 0;
+}
+.navbar--nav{
+    display: flex;
+    margin: 0;
+    padding: 0 2.5rem;
+    justify-content: flex-end;
+}
+.nav--item{
+    list-style: none;
+}
+.nav--link{
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    color: var(--bg-color);
+    /*text-transform: uppercase;*/
+}
+
+.buttons{
+    display: flex;
+    gap: 7px;
+    margin-bottom: .8em;
+    /*justify-content: space-between;
+    width: 225px;*/
+}
+.button{
+    width: 120px;
+    line-height: 2.5;
+    /*display: flex;
+    justify-content: space-evenly;*/
+    text-align: left;
+    padding-left: 12px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+.button--primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+.button--second {
+    background-color: var(--bg-color);
+    color: var(--primary-color); 
+    border: 1px solid var(--primary-color);
+}
+.button i{
+    transform: translate(50%,50%);
+    position: absolute;
+}
+
+.section{
+    padding: 20px 30px;
+    /*padding: 30px;*/
+    position: relative;
+    /*min-height: 450px;*/
+    display: grid;
+    align-items: center;
+}
+
+/* --------  INTRO -------- */
+#Presentation.section{
+    min-height: 550px;
+}
+#Presentation{
+    background-image: var(--image-header-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+.intro{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+.intro--info{
+    display: grid;
+}
+
+.info--text{
+    line-height: 1.3;
+    font-size:2em;
+}
+.nobg{
+    background-color: transparent;
+}
+
+
+.section-for-diagonal {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+.section-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+.section-mask {
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+    background-size: cover !important;
+    transform: skewY(-7deg);
+  }
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+.title{
+    text-align: center;
+    padding: 0 1em;
+    font-size: 1.9em;
+
+}
+.hide{
+    display: none;
+}
+.col-2{
+    width: 100%;
+}
+@media screen and (min-width: 750px) {
+    .col-2{
+        width: 50%;
+    }
+}
+
+/* ------ ABOUT ME -------- */
+.content--info{
+    display: grid;
+    padding: 0 1em;
+}
+@media screen and (min-width: 750px) {
+    .content--info{
+        display: flex;
+    }
+}
+.info-paragraph{
+    margin: 1em;
+    font-size: 19px;
+    align-self: center;
+    line-height: 1.3em;
+}
+.info-image{
+    text-align: center;
+}
+.info-image img{
+    max-width: 380px;
+    height: auto;
+}
+
+/* ------ PROJECTS -------- */
+#Projects.section{
+    background-color: var(--bgcolor-section);
+}
+.card--projects{
+    padding: 0 30px 30px;
+}
+
+.project--list{
+    display: grid;
+}
+.card-project{
+    width: 100%;
+    padding: 5px;
+}
+@media screen and (min-width: 750px) {
+    .project--list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-project{
+        width: 33.33333%;
+        padding: 5px;
+    }
+    .project-image{
+        max-width: none;
+    }
+}
+.project--item{
+    background-color: var(--bg-color);
+    transform-style: preserve-3d; 
+    position: relative;
+}
+.project-picture{
+    height: 242px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+.portfolio-icon-play{
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.project-image{
+    left: 50%;
+    height: 100%;
+    max-width: none;
+    transform: translate3d(-50%,0,0);
+    position: absolute;
+}
+
+.project-details{
+    padding: 16px 20px 20px;
+}
+.project-title{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+.project-icons{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.btn-pj-icon{
+    border: 1px solid black;
+    color: black;
+    background: rgba(255, 255, 255, 0.5) ;
+    border-radius: var(--border-radius);
+}
+.content-image{
+    width:100%; 
+    height: 100%; 
+    overflow: hidden; 
+    position: relative;
+}
+
+
+/* ------ TOOLS ----- */
+.card--tools{
+    /*background-color: lightcyan;*/
+}
+.tools-items{
+    display: grid;
+}
+.card--lenguages {
+    background-color: var(--bgcolor-section);
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+    flex-flow: wrap;
+}
+.tools-items i{
+    font-size: 40px;
+}
+.tools-item{
+    padding: 1.4em;
+    text-align: center;
+    /*width: 78px;*/
+}
+.tool-text{
+    font-size: 20px;
+    font-family: var(--font-icon);
+}
+@media screen and (min-width: 750px) {
+    .tools-items{
+        display: flex;
+        
+    }
+    .card--lenguages{
+        display: flex;
+        width: 50%;
+    }
+    .card--lenguages:nth-child(1){
+        border-right: 2px solid white;
+        border-top-left-radius: 2%;
+        border-bottom-left-radius: 2%;
+    }
+}
+

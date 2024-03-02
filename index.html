@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+</head>
+<body onscroll="TopPage();">
+    <header class="header nobg" id="Header">
+        <div class="navbar">
+            <ul class="navbar--nav">
+                <li class="nav--item">
+                    <a href="#AboutMe" class="nav--link">Acerca de mi</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#Projects" class="nav--link">Proyectos</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#Tools" class="nav--link">Herramientas</a>
+                </li>
+                <li class="nav--item">
+                    <a href="#Contact" class="nav--link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="section" id="Presentation">
+            <div class="intro--info">
+                <div class="typewriterr">
+                    <h1>Bienvenido!</h1>
+                </div>
+                <h2 class="info--text">¡Hola! Soy Francisco Antonio, soy <br> <strong>Ingeniero de Software con IA</strong>
+                    <br> y me desempeñado como <br>
+                    <span> Desarrollador Web BackEnd</span>
+                </h2> 
+
+                <div class="buttons">
+                    <a href="#" class="button button--second">Resume  <i class="fa-regular fa-file-lines"></i></a>
+                    <a href="https://github.com/FranciscoCandia?tab=repositories" target="_blank" 
+                        class="button button--second">Github <i class="fa-brands fa-github"></i>
+                    </a>  
+                    <a href="https://www.linkedin.com/in/francisco-candia-cordova-b6b94826b" target="_blank" 
+                        class="button button--second">Linkedin <i class="fa-brands fa-linkedin"></i>
+                    </a>  
+                </div>
+            </div>
+    </section>
+    <!--
+        <section class="section-for-diagonal" id="AboutMe">
+            <div class="section-content has-diagonal">
+                <h1>Esta es una sección en diagonal</h1>
+                <p>Es muy chida y además es responsiva...</p>
+            </div>
+            <div class="section-mask"></div>
+        </section>
+        <hr>
+    -->
+    <section class="section" id="AboutMe">
+        <div class="card--info">
+            <h2 class="title">Acerca de mí</h2>
+            <div class="content--info">
+                <div class="info-paragraph col-2">
+                    Soy una persona asertiva, responsable, proactiva y con buenas habilidades de
+                    colaboración dentro de un equipo. Comprometido con entregar un
+                    servicio de calidad y con ganas de aprender.
+                </div>
+                <div class="info-image col-2">
+                    <img src="../assets/images/objetivos-img.jpg" alt="Mis Objetivos personales">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="Projects">
+        <div class="card--projects">
+            <h2 class="title">Proyectos</h2>
+            <div class="portfolio--projects">
+                <div class="project--list" id="project-list">
+                    <div class="card-project hide">
+                        <div class="project--item">
+                            <div class="project-picture">
+                                <div class="project-icons">
+                                    <a class="btn-pj-icon demo" href="" target="_blank">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill-rule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </a>
+                                    <a class="btn-pj-icon code" href="" target="_blank">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32" >
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="content-image">
+                                    <img src="../assets/images/project-test.jpg" alt="Project tvVIMEO" class="project-image" >
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-title">Wrangler | Los Angeles</div>
+                                <div class="project-description">
+                                    8 months ago
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="Tools">
+        <div class="card--tools">
+            <h2 class="title">Lenguajes</h2>
+            <div class="tools-items">
+                <div class="card--lenguages">
+                    <div class="tools-item hide">
+                        <i class="fa-brands fa-html5" id="IconTool"></i>
+                        <div class="tool-text" id="ToolText">HTML</div>
+                    </div>
+                </div>
+                <div class="card--lenguages">
+                    <div class="tools-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="tool-text">SQL</div>
+                    </div>
+                    <div class="tools-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="tool-text">MySQL</div>
+                    </div>
+                    <div class="tools-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="tool-text">Oracle</div>
+                    </div>
+                    <div class="tools-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="tool-text">MongoDB</div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="section" id="Contact">
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
