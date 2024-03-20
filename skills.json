@@ -1,0 +1,78 @@
+[
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/officel/48/000000/php-logo.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/nodejs.png"
+    },
+    {
+        "name": "Angular",
+        "icon": "https://img.icons8.com/color/48/angularjs.png"
+    },
+    {
+        "name": "SQL Server",
+        "icon": "https://img.icons8.com/color/48/microsoft-sql-server.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/fluency/48/mysql-logo.png"
+    },
+    {
+        "name": "Oracle",
+        "icon": "https://img.icons8.com/color/48/oracle-logo.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/mongodb.png"
+    },
+    {
+        "name": "Postman",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/firebase.png"
+    },
+    {
+        "name": "Azure",
+        "icon": "https://img.icons8.com/fluency/48/azure-1.png"
+    },
+    {
+        "name": "JQuery",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "GitLab",
+        "icon": "https://img.icons8.com/color/48/000000/gitlab.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/ios-filled/50/ffffff/github.png"
+    },
+    {
+        "name": "Shopify",
+        "icon": "https://img.icons8.com/color/48/000000/shopify.png"
+    }
+]

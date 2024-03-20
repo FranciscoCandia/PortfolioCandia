@@ -1,31 +1,39 @@
-const tools = ['HTML', 'CSS', 'JS', 'PHP', 'Python', 'Java', 'Angular', 'NodeJS']
-const icon_tools = ['html5', 'css3-alt', 'js', 'php', 'python', 'java', 'angular', 'node']
-const color_tools = ['hsl(12, 73%, 51%)', 'hsl(207, 75%, 42%)', 'hsl(49, 86%, 56%)', 
-                    'hsl(0, 0%, 2%)', '#5e79c0', 'hsl(10, 75%, 57%)', 'hsl(0, 100%, 38%)', 'green']
-
 
 const Projects = ['Registro de Asistencia Docente-Alumno', 'Cajero Automático', 'Detección de mascarilla']
-const srcProjects = ['project001', 'project-test', 'project-test']
+const srcProjects = ['project001', 'project-test', 'project003']
 InsertarProjects();
 
-/*tools.forEach(tool => {
-    for (let x = 0; x < tools.length; x++) {
-        const element = tools[x];
-        
-    }
-    console.log(tool[0])
-});
-*/
-const el = document.querySelector(".card--lenguages");
-for (let x = 0; x < tools.length; x++) {
-    el.innerHTML+='<div class="tools-item" style="color: '+color_tools[x]+' "> \
-                <i class="fa-brands fa-'+icon_tools[x]+' " id="IconTool"></i> \
-                <div class="tool-text">' + tools[x] +'</div> \
-                </div>';
 
-    document.querySelector('.tools-item').style.color = color_tools[x];
-    
+async function fetchData(type = "skills") {
+    let response
+    if (type === "skills") {
+        response = await fetch("skills.json")
+    }
+
+    const data = await response.json();
+    return data;
 }
+
+function showSkills(skills) {
+    let skillsContainer = document.getElementById("card--lenguages");
+    let skillHTML = "";
+
+    skills.forEach(skill => {
+        skillHTML += `
+            <div class="tools-item">
+                <img src="${skill.icon}" alt="skill"/>
+                <span class="tool-text">${skill.name}</span>
+            </div>
+        `;
+    });
+
+    skillsContainer.innerHTML = skillHTML;
+}
+
+fetchData().then(data => {
+    showSkills(data);
+});
+
 
 var elProj = document.getElementsByClassName("card-project");
 
@@ -52,7 +60,7 @@ function InsertarProjects() {
     }
 }
 
-
+document.body.onscroll = function() { TopPage() };
 
 function TopPage() {
 

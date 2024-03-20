@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
 </head>
-<body onscroll="TopPage();">
+<body >
     <header class="header nobg" id="Header">
         <div class="navbar">
             <ul class="navbar--nav">
@@ -18,7 +18,7 @@
                     <a href="#Projects" class="nav--link">Proyectos</a>
                 </li>
                 <li class="nav--item">
-                    <a href="#Tools" class="nav--link">Herramientas</a>
+                    <a href="#Tools" class="nav--link">Skills</a>
                 </li>
                 <li class="nav--item">
                     <a href="#Contact" class="nav--link">Contacto</a>
@@ -33,16 +33,25 @@
                 </div>
                 <h2 class="info--text">¡Hola! Soy Francisco Antonio, soy <br> <strong>Ingeniero de Software con IA</strong>
                     <br> y me desempeñado como <br>
+                    <span class="hide">Programador</span>
                     <span> Desarrollador Web BackEnd</span>
+                    <span class="hide">Analista Programador</span>
                 </h2> 
 
                 <div class="buttons">
-                    <a href="#" class="button button--second">Resume  <i class="fa-regular fa-file-lines"></i></a>
+                    <a href="#" class="button button--second">
+                        <span>Resume</span>
+                        <i class="fa-regular fa-file-lines"></i>
+                    </a>
                     <a href="https://github.com/FranciscoCandia?tab=repositories" target="_blank" 
-                        class="button button--second">Github <i class="fa-brands fa-github"></i>
+                        class="button button--second">
+                        <span>Github</span>
+                        <i class="fa-brands fa-github"></i>
                     </a>  
                     <a href="https://www.linkedin.com/in/francisco-candia-cordova-b6b94826b" target="_blank" 
-                        class="button button--second">Linkedin <i class="fa-brands fa-linkedin"></i>
+                        class="button button--second">
+                        <span>Linkedin</span>
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>  
                 </div>
             </div>
@@ -67,7 +76,7 @@
                     servicio de calidad y con ganas de aprender.
                 </div>
                 <div class="info-image col-2">
-                    <img src="../assets/images/objetivos-img.jpg" alt="Mis Objetivos personales">
+                    <img src="assets/images/objetivos-img.jpg" alt="Mis Objetivos personales">
                 </div>
             </div>
         </div>
@@ -94,7 +103,7 @@
                                 </div>
 
                                 <div class="content-image">
-                                    <img src="../assets/images/project-test.jpg" alt="Project tvVIMEO" class="project-image" >
+                                    <img src="assets/images/project-test.jpg" alt="Project tvVIMEO" class="project-image" >
                                 </div>
                             </div>
                             <div class="project-details">
@@ -115,38 +124,22 @@
 
     <section class="section" id="Tools">
         <div class="card--tools">
-            <h2 class="title">Lenguajes</h2>
+            <h2 class="title">Skills & Abilities</h2>
             <div class="tools-items">
-                <div class="card--lenguages">
+                <div class="card--lenguages" id="card--lenguages">
                     <div class="tools-item hide">
                         <i class="fa-brands fa-html5" id="IconTool"></i>
                         <div class="tool-text" id="ToolText">HTML</div>
-                    </div>
-                </div>
-                <div class="card--lenguages">
-                    <div class="tools-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div class="tool-text">SQL</div>
-                    </div>
-                    <div class="tools-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div class="tool-text">MySQL</div>
-                    </div>
-                    <div class="tools-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div class="tool-text">Oracle</div>
-                    </div>
-                    <div class="tools-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div class="tool-text">MongoDB</div>
                     </div>
                 </div>
             </div>
         </div> 
     </section>
 
-    <section class="section" id="Contact">
+    <section class="section hide" id="Contact">
     </section>
+
+    <footer class="bg-footer"></footer>
 
     <script src="js/scripts.js"></script>
 </body>
